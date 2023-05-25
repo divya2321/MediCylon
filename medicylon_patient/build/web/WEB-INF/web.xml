@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>appointmentservlet</servlet-name>
+        <servlet-class>Servlet.appointmentservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginservlet</servlet-name>
+        <servlet-class>Servlet.loginservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutservlet</servlet-name>
+        <servlet-class>Servlet.logoutservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>appointmentservlet</servlet-name>
+        <url-pattern>/appointmentservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginservlet</servlet-name>
+        <url-pattern>/loginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutservlet</servlet-name>
+        <url-pattern>/logoutservlet</url-pattern>
+    </servlet-mapping>
+    
+       <filter>
+        <filter-name>Authorization check filter</filter-name>
+        <filter-class>Filters.AuthenticationCheckFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Authorization check filter</filter-name>
+        <url-pattern>/home.jsp</url-pattern>
+    </filter-mapping>
+    
+        <filter>
+        <filter-name>Login filter</filter-name>
+        <filter-class>Filters.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Login filter</filter-name>
+        <url-pattern>/login.jsp</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

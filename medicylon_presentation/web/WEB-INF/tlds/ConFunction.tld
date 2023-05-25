@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>confunction</short-name>
+  <uri>/WEB-INF/tlds/ConFunction</uri>
+
+  <function>
+      <name>loadStaff</name>
+      <function-class>Server.Staff.StaffClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadStaff()</function-signature>
+  </function>
+  
+    <function>
+      <name>loadUser</name>
+      <function-class>Server.User.UserClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadUser()</function-signature>
+  </function>
+  
+    <function>
+      <name>loadStaffIdNic</name>
+      <function-class>Server.Staff.StaffClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadStaffIdNic()</function-signature>
+  </function>
+  
+   <function>
+      <name>loadTechnicianIdName</name>
+      <function-class>Server.Staff.StaffClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadTechnicianIdName()</function-signature>
+  </function>
+  
+  
+   <function>
+      <name>loadTestCategory</name>
+      <function-class>Server.Test.TestClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadTestCategory()</function-signature>
+  </function>
+  
+   <function>
+      <name>loadTest</name>
+      <function-class>Server.Test.TestClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadTest()</function-signature>
+  </function>
+  
+    <function>
+      <name>loadPatient</name>
+      <function-class>Server.Patient.PatientClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadPatient()</function-signature>
+  </function>
+  
+   <function>
+      <name>loadAppointment</name>
+      <function-class>Server.Appointment.AppointmentClientProcedure</function-class>
+      <function-signature>java.util.ArrayList loadAppointment()</function-signature>
+  </function>
+  
+  
+
+</taglib>
